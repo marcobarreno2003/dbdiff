@@ -1,5 +1,6 @@
 mod cli;
 mod commands;
+mod config;
 mod schema;
 mod storage;
 mod diff;

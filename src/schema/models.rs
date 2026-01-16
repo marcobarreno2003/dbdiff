@@ -62,6 +62,17 @@ impl Schema {
             captured_at: Utc::now(),
         }
     }
+
+    pub fn with_tables(tables: Vec<Table>) -> Self {
+        Self {
+            tables,
+            captured_at: Utc::now(),
+        }
+    }
+
+    pub fn table_count(&self) -> usize {
+        self.tables.len()
+    }
 }
 
 impl Default for Schema {
